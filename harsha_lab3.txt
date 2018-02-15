@@ -1,0 +1,38 @@
+
+The solution to the questions are given below
+
+ the questins are:
+1. Display third column of filename.csv without printing the reader CGPA, also sort the same.
+solution:$cut -d , -f 3 harsha.csv|grep -v cgpa|sort
+
+
+
+2. Display only current time using date command.
+solution:$date +"%T"
+
+
+
+3. Use unique with all possible options.
+solution:$uniq -c harsha.csv
+
+
+
+4. Print number of lines from ls-l command result.
+solution:$ls -l
+
+
+     
+5. Dispay USN from 7-14 along with other fields.
+solution:$tail -n 8 harsha.csv 
+
+
+
+6. Sort only name field from filename.csv.
+solution:$cut -d, -f 2 harsha.csv|grep -v name|sort
+
+
+
+7. Replace name with student name.
+solution:$cut -d, -f 2 harsha.csv | head -n 1 |tr ["name"] ["student name"]
+
+

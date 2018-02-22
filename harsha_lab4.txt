@@ -1,0 +1,39 @@
+
+
+write a shell script to find a given number is positive or not....
+
+ "Enter a Number:"
+read n
+if [ $n -gt 0 ]
+then
+echo "Number is positive"
+else
+if [ $n -eq 0 ]
+then
+echo "Number is Zero!"  
+else
+echo "Number is Negative!!"
+fi
+fi
+
+
+
+write a shell script to find a given number is a prime number or not
+
+
+
+echo"enter a number"
+read num
+i=2
+while [$i -lt $num]
+do
+if [`expr $num %$i` -eq 0 ]
+then
+echo "$num is not a prime number"
+echo "since divisible by $i"
+exit
+fi
+i=`expr $i + 1`
+done
+echo "$num is a prime number"
+

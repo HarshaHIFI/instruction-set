@@ -1,0 +1,9 @@
+
+to find the no of users logged in unix
+
+
+num=$(who-q)
+details=$(who-H)
+echo"the total number of users logged in :$num"
+echo"the deatils of looged-in users:\n$details"
+
